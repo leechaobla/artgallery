@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-image: url(D:\xampp\htdocs\ArtGallery\Images\background2.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
