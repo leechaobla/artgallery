@@ -16,8 +16,15 @@ body{
     background-position: center; 
     background-repeat: no-repeat;
     background-attachment: fixed;
+        
 }
-.login-box{
+.registration-header{
+    text-align: center;
+    padding: 0;
+
+    
+}
+.registration-box{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -25,11 +32,11 @@ body{
     height: 480px;
     padding: 30px;
 }
-.login-header{
+.registration-header{
     text-align: center;
     margin: 20px 0 40px 0;
 }
-.login-header header{
+.registration-header{
     color: #333;
     font-size: 30px;
     font-weight: 600;
@@ -53,11 +60,7 @@ body{
 .input-field:focus{
     width: 105%;
 }
-.forgot{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-}
+
 section{
     display: flex;
     align-items: center;

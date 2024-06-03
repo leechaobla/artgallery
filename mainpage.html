@@ -3,25 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Art Gallery</title>
+    <link rel="stylesheet" href="mainpage.css">
+    <title>InArt</title>
 </head>
 <body>
     <header>
-        <h1>Welcome to InArt</h1>
-    </header>
-    <nav>
+        <h1>InArt</h1>
+        </header>
+    <nav class="nav main-nav">
         <a href="#">Home</a>
         <a href="#">Gallery</a>
-        <a href="#">About Us</a>
+        <a href="aboutpage.html">About Us</a>
         <a href="#">Contact</a>
-        <a href="#" class="btn">Log In</a>
-        <a href="#" class="btn">Sign Up</a>
+        <a href="login.html" class="btn">Log In</a>
     </nav>
+    <section aria-label="slideshow">
+        <button class="carousell button prev">&#8656;</button>
+        <button class="carousell button next">&#8658;</button>
+        <div  class="carousell">
+        <ul>
+            <li class="slide">
+                <img src="Images/deer.jpg" alt="Image 1">
+            </li>
+            <li class="slide">
+                <img src="Images/aipic.png" alt="Image 2">
+            </li>
+            <li class="slide">
+                <img src="Images/peakpx.jpg" alt="Image 3">
+            </li>
+        </ul>
+    </div>
+    </section>
     <div class="container">
-    <h2>Featured Artworks</h2>
+        <h2 class="container-header">Featured Artworks</h2>
     <div class="featured-artwork">
       <div class="artwork-item">
-        <img src="artwork1.jpg" alt="Artwork 1">
+        <img src="Images/artwork1.jpg" alt="Artwork 1">
         <h3>Artwork Title</h3>
         <p>Artist Name</p>
       </div>
