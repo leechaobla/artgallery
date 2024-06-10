@@ -1,0 +1,89 @@
+body {
+    font-family: Poppins, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-image: url("Images/background.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444; 
+}
+
+.nav a {
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+    background-color: #575757;
+}
+
+.nav .btn {
+    background-color: #ff5722;
+    border-radius: 4px;
+}
+
+
+main {
+    padding: 20px;
+}
+
+.gallery-header {
+    margin-bottom: 20px;
+}
+
+.search-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.search-filter input[type="text"],
+.search-filter select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.artworks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.artwork-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.artwork-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.artwork-item h3,
+.artwork-item p {
+    margin: 5px 0;
+}
+

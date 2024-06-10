@@ -1,24 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
-*{
-    margin: 0;
-    padding: 0;
+body {
+    font-family: Poppins, sans-serif;
     box-sizing: border-box;
-    font-family: Times New Roman;
-    color:#777;
-}
-header{
-    text-align: center;
-    margin: 0px;
-    font-size: 2em;
-    font-family: Poppins;
-}
-h2{
-    text-align: center;
-    margin: 0px;
-    font-size: 1em;
-    font-family: Poppins;
-}
-body{
     margin: 0;
     padding: 0;
     background-image: url("Images/background.jpg");
@@ -27,27 +10,37 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-.nav{
-    margin: 0;
-}
-.nav a{
-    display: inline-block;
-    padding: 1em;
-    color: #777;
-    text-decoration: none;
-}
-.nav a:hover{
-    background-color: rgba(255,255,255,.3)
-}
-.main-nav{
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
     text-align: center;
-    font-size: 1.1em;
-    font-weight: lighter;
-    border-bottom: 1px solid rgba(255,255,255,0.3)
 }
-.nav a{
-    padding: 1%;
+
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444; /* Added background color to nav */
 }
+
+.nav a {
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+    background-color: #575757;
+}
+
+.nav .btn {
+    background-color: #ff5722;
+    border-radius: 4px;
+}
+
 .container-header{
     font-family: 'DMSerif Display';
     text-align: left;
@@ -56,19 +49,26 @@ body{
 }
 .carousell {
   position: relative;
-  width: 95%; /* Adjust this value as needed to make it wider */
-  margin: 0 auto; /* Center the carousel */
+  width: 100%;
+  margin: 0 auto;
   overflow: hidden;
-  border: 1px solid #ccc; /* Optional: Add a border for better visualization */
-  border-radius: 10px; /* Optional: Add border radius for rounded corners */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  height: 700px;
+}
+
+.carousell img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .carousell ul {
   display: flex;
-  transition: transform 0.5s ease-in-out;
   padding: 0;
   margin: 0;
-  list-style-type: none;
+  transition: transform 0.5s ease-in-out;
+  list-style: none;
 }
 
 .carousell .slide {
@@ -80,13 +80,11 @@ body{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  background-color: rgba(255, 255, 255, 0.5);
   border: none;
-  padding: 10px;
   cursor: pointer;
-  z-index: 10;
-  border-radius: 50%; /* Optional: Make the buttons round */
+  font-size: 2em;
+  z-index: 1;
 }
 
 .carousell-button.previous {

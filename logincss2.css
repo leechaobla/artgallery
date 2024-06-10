@@ -28,12 +28,12 @@ header {
     font-family: Poppins;
 }
 
-.registration-box {
+.login-box {
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 440px;
-    height: 550px;
+    height: 530px;
     padding: 30px;
     margin-top: 30px;
     background-color: white;
@@ -41,12 +41,13 @@ header {
     box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.1);
 }
 
-.regis-header- {
+.login-header {
     text-align: center;
     margin: 20px 0 40px 0;
+    font-family: 'Poppins',sans-serif;
 }
 
-.regis-header- {
+.login-header header {
     color: #333;
     font-size: 30px;
     font-weight: 600;
@@ -74,6 +75,11 @@ header {
     width: 105%;
 }
 
+.forgot {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
 
 section {
     display: flex;

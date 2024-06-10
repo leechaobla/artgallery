@@ -4,45 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mainpage.css">
+    <script src="mainpage.js" defer></script>
     <title>InArt</title>
 </head>
 <body>
     <header>
         <h1>InArt</h1>
-        </header>
+    </header>
     <nav class="nav main-nav">
-        <a href="mainpage.html">Home</a>
         <a href="gallery.html">Gallery</a>
         <a href="aboutpage.html">About Us</a>
         <a href="contact.html">Contact</a>
         <a href="login.html" class="btn">Log In</a>
     </nav>
     <section aria-label="slideshow">
-        <div  class="carousell">
-        <button class="carousell-button previous">&#8656;</button>
-        <button class="carousell-button next">&#8658;</button>
-        <ul>
-            <li class="slide">
-                <img src="Images/deer.jpg" alt="Image 1">
-            </li>
-            <li class="slide">
-                <img src="Images/aipic.png" alt="Image 2">
-            </li>
-            <li class="slide">
-                <img src="Images/peakpx.jpg" alt="Image 3">
-            </li>
-        </ul>
-    </div>
+        <div class="carousell" data-carousell>
+            <button class="carousell-button previous" data-carousell-button="previous">&#8656;</button>
+            <button class="carousell-button next" data-carousell-button="next">&#8658;</button>
+            <ul data-slides>
+                <li class="slide">
+                    <img src="Images/deer.jpg" alt="Image 1">
+                    <div class="slide-text">Deer in the Wild</div>
+                </li>
+                <li class="slide">
+                    <img src="Images/aipic.png" alt="Image 2">
+                    <div class="slide-text">AI Generated Art</div>
+                </li>
+                <li class="slide">
+                    <img src="Images/peakpx.jpg" alt="Image 3">
+                    <div class="slide-text">Mountain Peaks</div>
+                </li>
+            </ul>
+        </div>
     </section>
     <div class="container">
-    <h2 class="container-header">Featured Artworks</h2>
-    <div id="featured-artwork" class="featured-artwork">
-        <!-- Artwork items  -->
+        <h2 class="container-header">Featured Artworks</h2>
+        <div id="featured-artwork" class="featured-artwork">
+            <!-- Artwork items  -->
+        </div>
     </div>
-</div>
     <footer>
         <p>&copy; 2024 Art Gallery. All rights reserved.</p>
     </footer>
 </body>
 </html>
-
