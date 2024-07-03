@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="registration.css">
-    <title>Registration | InArt </title>
-    </head>
-    <body>
-        <header>
-     <img src="Images/inartlogo.png"alt="InArt Logo" class="logo">
-        </header>
-        <div class="registration-box">
+    <title>Registration | InArt</title>
+</head>
+<body>
+    <header>
+        <img src="Images/inartlogo.png" alt="InArt Logo" class="logo">
+    </header>
+    <div class="registration-box">
         <div class="regis-header">
             <h1>Welcome to InArt!</h1>
         </div>
+        <form action="/artgallery/registration.php" method="POST">
             <div class="input-box">
-            <input type="text" class="input-field" placeholder="Enter Your Username" autocomplete="off" required>
-        </div>
-        <div class="input-box">
-            <input type="text" class="input-field" placeholder="Enter Your Email" autocomplete="off" required>
-        </div>
-        <div class="input-box">
-            <input type="password" class="input-field" placeholder="Enter Your Password" autocomplete="off" required>
-        </div>
-        <div class="input-submit">
-            <button class="submit-btn" id="submit"></button>
-            <label for="submit">Register</label>
-        </div>
+                <input type="text" name="username" class="input-field" placeholder="Enter Your Username" autocomplete="off" required>
+            </div>
+            <div class="input-box">
+                <input type="email" name="email" class="input-field" placeholder="Enter Your Email" autocomplete="off" required>
+            </div>
+            <div class="input-box">
+                <input type="password" name="password" class="input-field" placeholder="Enter Your Password" autocomplete="off" required>
+            </div>
+            <div class="input-submit">
+                <button type="submit" class="submit-btn" id="submit">Register</button>
+            </div>
+        </form>
         <div class="sign-up-link">
-            <p>Already a member ? <a href="login.html">Sign In</a></p>
+            <p>Already a member? <a href="login.html">Sign In</a></p>
         </div>
-            <div class="home-btn">
-        <a href="mainpage.html">Back to Home</a>
+        <div class="home-btn">
+            <a href="mainpage.html">Back to Home</a>
+        </div>
     </div>
-    </div>
-    </body>
+</body>
 </html>

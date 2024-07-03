@@ -1,48 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="logincss2.css">
-    <title>Login | InArt </title>
+    <title>Login | InArt</title>
 </head>
 <body>
-
-<header>
-     <img src="Images/inartlogo.png"alt="InArt Logo" class="logo">
-</header>
-
-<div class="login-box">
-    <div class="login-header">
-        <header>Welcome back!</header>
+    <header>
+        <img src="Images/inartlogo.png" alt="InArt Logo" class="logo">
+    </header>
+    <div class="login-box">
+        <div class="login-header">
+            <h1>Login to InArt</h1>
+        </div>
+        <form action="/artgallery/login.php" method="POST">
+            <div class="input-box">
+                <input type="text" class="input-field" placeholder="Enter Your Username" name="username" autocomplete="off" required>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" placeholder="Enter Your Password" name="password" autocomplete="off" required>
+            </div>
+            <div class="input-submit">
+                <button type="submit" class="submit-btn">Login</button>
+            </div>
+        </form>
+        <div class="sign-up-link">
+            <p>Not a member? <a href="registration.html">Sign Up</a></p>
+        </div>
+        <div class="home-btn">
+            <a href="mainpage.html">Back to Home</a>
+        </div>
     </div>
-    <div class="input-box">
-        <input type="text" class="input-field" placeholder="Email" autocomplete="off" required>
-    </div>
-    <div class="input-box">
-        <input type="password" class="input-field" placeholder="Password" autocomplete="off" required>
-    </div>
-    <div class="forgot">
-        <section>
-            <input type="checkbox" id="check">
-            <label for="check">Remember me</label>
-        </section>
-        <section>
-            <a href="forgetpass.html">Forgot password</a>
-        </section>
-    </div>
-    <div class="input-submit">
-        <button class="submit-btn" id="submit"></button>
-        <label for="submit">Sign In</label>
-    </div>
-    <div class="sign-up-link">
-        <p>Don't have an account? <a href="registration.html">Sign Up</a></p>
-    </div>
-    <div class="home-btn">
-        <a href="mainpage.html">Back to Home</a>
-    </div>
-</div>
-
 </body>
 </html>

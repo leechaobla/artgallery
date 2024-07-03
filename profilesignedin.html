@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css">
+    <title>User Profile | InArt</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Profile</h1>
+    </header>
+    <nav class="nav">
+        <a href="mainpage.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="aboutpage.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="logout.php" class="btn">Logout</a>
+    </nav>
+    <div class="profile-info">
+        <h2>Your Profile Information</h2>
+        <div class="user-details">
+            <p><strong>User ID:</strong> <?php echo htmlspecialchars($_SESSION['user_id']); ?></p>
+            <p><strong>Username:</strong> <?php echo htmlspecialchars($_SESSION['username']); ?></p>
+            <!-- Add more user-specific information here -->
+        </div>
+    </div>
+    <div class="interaction-history">
+        <h2>Your Interaction History</h2>
+        <!-- Example of interaction history -->
+        <div class="interaction-item">
+            <p><strong>Date:</strong> January 1, 2024</p>
+            <p><strong>Action:</strong> Liked "Title of Artwork 1"</p>
+        </div>
+        <div class="interaction-item">
+            <p><strong>Date:</strong> February 15, 2024</p>
+            <p><strong>Action:</strong> Added "Title of Artwork 2" to Favorites</p>
+        </div>
+        <!-- Display more interaction history based on user actions -->
+    </div>
+    <footer>
+        <p>&copy; 2024 Art Gallery. All rights reserved.</p>
+    </footer>
+</body>
+</html>
