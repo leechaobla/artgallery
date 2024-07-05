@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
-$username = "terry"; // Default username for XAMPP
-$password = ""; // Default password for XAMPP
+$username = "root";
+$password = "";
 $dbname = "artgallery";
 
 // Create connection
@@ -12,3 +12,4 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 ?>
+
