@@ -59,25 +59,26 @@ session_start();
         <div id="featured-artwork" class="featured-artwork">
             <div class="artwork-item">
                 <img src="Images/waves.jpg" alt="Artwork 1">
-                <h3>Title of Artwork 1</h3>
-                <p>Artist: John Doe</p>
+                <h3>Title: Waves</h3>
+                <p>Artist: Fujmoto Tatsumak</p>
             </div>
             <div class="artwork-item">
                 <img src="Images/artwork2.jpg" alt="Artwork 2">
-                <h3>Title of Artwork 2</h3>
-                <p>Artist: Jane Smith</p>
+                <h3>Title: Starry Night</h3>
+                <p>Artist: Van Gogh</p>
             </div>
             <div class="artwork-item">
                 <img src="Images/artwork3.jpg" alt="Artwork 3">
-                <h3>Title of Artwork 3</h3>
-                <p>Artist: John Doe</p>
+                <h3>Title: Goddess</h3>
+                <p>Artist: WLOP</p>
             </div>
             <div class="artwork-item">
                 <img src="Images/artwork4.jpg" alt="Artwork 4">
-                <h3>Title of Artwork 4</h3>
-                <p>Artist: John Doe</p>
+                <h3>Title: Vykke Elden Ring</h3>
+                <p>Artist: Joe Satriani/p>
             </div>
         </div>
+    </div>
     </div>
     <footer>
         <p>&copy; 2024 Art Gallery. All rights reserved.</p>

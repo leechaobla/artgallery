@@ -31,14 +31,18 @@ if (!isset($_SESSION['user_id'])) {
         <?php endif; ?>
     </nav>
 
-    <section>
-        <form action="upload_handler.php" method="POST" enctype="multipart/form-data">
-            <input type="text" name="title" placeholder="Artwork Title" required>
-            <textarea name="description" placeholder="Artwork Description" required></textarea>
-            <input type="file" name="artwork" accept="image/*" required>
-            <button type="submit">Upload</button>
-        </form>
-    </section>
+    <form action="upload_handler.php" method="POST" enctype="multipart/form-data">
+    <input type="text" name="title" placeholder="Artwork Title" required>
+    <textarea name="description" placeholder="Artwork Description" required></textarea>
+    <input type="file" name="artwork" accept="image/*" required>
+    <label for="privacy">Privacy:</label>
+    <select name="privacy" id="privacy" required>
+        <option value="public">Public</option>
+        <option value="private">Private</option>
+    </select>
+    <button type="submit">Upload</button>
+</form>
+
 
     <footer>
         <p>&copy; 2024 Art Gallery. All rights reserved.</p>

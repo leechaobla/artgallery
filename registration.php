@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
-$username = "terry"; // default username for XAMPP
-$password = ""; // default password for XAMPP
-$dbname = "artgallery"; // replace with your database name
+$username = "terry"; 
+$password = "";
+$dbname = "artgallery"; 
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -15,17 +15,24 @@ if ($conn->connect_error) {
 // Get form data
 $user_name = $_POST['username'];
 $email = $_POST['email'];
-$password = password_hash($_POST['password'], PASSWORD_DEFAULT); // hash the password for security
-$user_id = uniqid('user_', true); // generate a unique user_id
-$date = date('Y-m-d H:i:s'); // get the current date and time
+$password = password_hash($_POST['password'], PASSWORD_DEFAULT); 
+$user_id = uniqid('user_', true);
+$date = date('Y-m-d H:i:s'); 
+$role = 'user'; 
 
-// Prepare and bind
-$stmt = $conn->prepare("INSERT INTO users (user_id, user_name, password, date, email) VALUES (?, ?, ?, ?, ?)");
-$stmt->bind_param("sssss", $user_id, $user_name, $password, $date, $email);
 
-// Execute the statement
+if (isset($_POST['admin_registration']) && $_POST['admin_registration'] == 'yes') {
+    $role = 'admin';
+}
+
+
+$stmt = $conn->prepare("INSERT INTO users (user_id, user_name, password, date, email, role) VALUES (?, ?, ?, ?, ?, ?)");
+$stmt->bind_param("ssssss", $user_id, $user_name, $password, $date, $email, $role);
+
+
 if ($stmt->execute()) {
-    echo "New record created successfully";
+    header("Location: mainpage.html?registration=success");
+    exit();
 } else {
     echo "Error: " . $stmt->error;
 }

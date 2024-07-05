@@ -29,18 +29,19 @@ session_start();
     <h2>Contact Us</h2>
     <p>We'd love to hear from you! Whether you have a question about the gallery, a specific artwork, or any other inquiry, please don't hesitate to reach out.</p>
 
-    <form id="contact-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+    <form id="contact-form" action="submit_contact.php" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
 
-        <button type="submit">Send Message</button>
-    </form>
+    <button type="submit">Send Message</button>
+</form>
+
 </main>
 
     <footer>

@@ -21,5 +21,5 @@ document.addEventListener('DOMContentLoaded', () => {
         updateSlidePosition();
     });
 
-    updateSlidePosition(); // Initialize slide position
+    updateSlidePosition(); 
 });
