@@ -45,7 +45,7 @@ session_start();
 </main>
 
     <footer>
-        <p>&copy; 2024 Art Gallery. All rights reserved.</p>
+        <p>&copy; 2024 InArt Art Gallery. All rights reserved.</p>
     </footer>
 </body>
 </html>

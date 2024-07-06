@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Members Only"
-AuthUserFile /xampp/apache/.htpasswd
-require valid-user

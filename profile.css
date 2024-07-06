@@ -1,3 +1,4 @@
+/* Reset styles */
 * {
     margin: 0;
     padding: 0;
@@ -29,6 +30,7 @@ header {
     color: #fff;
     text-decoration: none;
     padding: 0.5rem 1rem;
+    display: inline-block;
 }
 
 .nav a:hover {
@@ -65,6 +67,9 @@ h2 {
     border: 1px solid #ddd;
     padding: 15px;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .artwork-item img {
@@ -76,11 +81,13 @@ h2 {
 .artwork-item h3 {
     font-size: 1.4rem;
     margin-bottom: 5px;
+    text-align: center;
 }
 
 .artwork-item p {
     font-size: 1.2rem;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .toggle-comments {
@@ -102,6 +109,7 @@ h2 {
     border: 1px solid #ccc;
     padding: 10px;
     margin-top: 10px;
+    width: 100%;
 }
 
 .comments p {
@@ -112,7 +120,7 @@ h2 {
     font-weight: bold;
 }
 
-.footer {
+footer {
     background-color: #333;
     color: #fff;
     text-align: center;
@@ -120,4 +128,47 @@ h2 {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .user-details h2, .user-details p, h2, .artwork-item h3, .artwork-item p {
+        text-align: center;
+    }
+
+    .artwork-item {
+        padding: 10px;
+    }
+
+    .toggle-comments {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+
+    footer {
+        padding: 0.5rem 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav a {
+        padding: 0.5rem;
+    }
+
+    .user-details h2 {
+        font-size: 1.5rem;
+    }
+
+    .user-details p, h2, .artwork-item h3, .artwork-item p {
+        font-size: 1rem;
+    }
+
+    .toggle-comments {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
 }

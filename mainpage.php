@@ -81,7 +81,7 @@ session_start();
     </div>
     </div>
     <footer>
-        <p>&copy; 2024 Art Gallery. All rights reserved.</p>
+        <p>&copy; 2024 InArt Gallery. All rights reserved.</p>
     </footer>
 </body>
 </html>
